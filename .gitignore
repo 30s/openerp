@@ -1,0 +1,5 @@
+*.egg
+build
+*~
+win32
+*egg-info
