@@ -20,10 +20,15 @@
 ##############################################################################
 
 import io
+import sys
 import StringIO
 
-from PIL import Image
-from PIL import ImageOps
+if sys.platform == 'win32':
+    from PIL import Image
+    from PIL import ImageOps
+else:
+    import Image
+    import ImageOps
 from random import random
 
 # ----------------------------------------
